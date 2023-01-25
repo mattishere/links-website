@@ -1,3 +1,6 @@
+# PERSONAL SIDENOTE
+I wrote this as a prototype for my Fiverr gig at https://www.fiverr.com/mattdoesdev :) Not great, not terrible however!
+
 # Links
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
