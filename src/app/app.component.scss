@@ -259,3 +259,42 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 370px) {
+	.container {
+		.window {
+			.image {
+				img {
+					width: 35px;
+				}
+
+				.title {
+					font-size: 1.5rem;
+				}
+			}
+
+			.info {	
+
+				.heading {
+					.description {
+						font-size: 1rem;
+					}
+				}
+
+				.links {
+					a {
+						flex-direction: column;
+						width: 90%;
+						font-size: 1rem;
+						margin: .2rem;
+
+						i {
+							margin-right: .2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
