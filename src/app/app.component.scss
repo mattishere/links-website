@@ -1,0 +1,261 @@
+.container {
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+
+	.window {
+		width: 90%;
+		height: 90%;
+
+		border: 4px solid white;
+		border-radius: 25px;
+		background: linear-gradient(45deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .3));
+
+		display: flex;
+		flex-direction: row;
+
+		.title {
+			font-size: 6rem;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+
+		.image {
+			display: flex;
+			flex-direction: column;
+
+			justify-content: center;
+			align-items: center;
+			background: rgba(0, 0, 0, .1);
+			border-right: 4px solid white;
+			border-bottom-left-radius: 25px;
+			border-top-left-radius: 25px;
+
+			padding: 2rem;
+
+			img {
+				max-width: 100%;
+				height: auto;
+				width: auto;
+
+				border: 4px solid white;
+				border-radius: 100%;
+				background: linear-gradient(45deg, rgba(255, 255, 255, .2) 30%, rgba(255, 255, 255, .1));
+			}
+						
+		}
+
+		.info {	
+			width: 100%;
+
+			overflow-y: scroll;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.heading {
+				margin: 1rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.description {
+					font-size: 2rem;
+					width: 80%;
+					text-align: center;
+				}
+			}
+			
+			.links {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				
+				a {
+					text-align: center;
+					width: 40%;
+					font-size: 2rem;
+					color: white;
+					text-decoration: none;
+					padding: 1rem;
+					margin: 1rem;
+					border: 2px solid white;
+					border-radius: 25px;
+					transition: .2s;
+					
+					i {
+						margin-right: .8rem;
+					}
+				}
+
+				.github {
+					background-color: #191e27;
+				}
+				.github:hover {
+					background-color: #292d39;
+				}
+
+				.fiverr {
+					background-color: #72d37c;
+				}
+				.fiverr:hover {
+					background-color: #7ce685;
+				}
+				.source {
+					background-color: #8b95d3;
+				}
+				.source:hover {
+					background-color: #a6ade0;
+				}
+				.portfolio {
+					background-color: #363b53;
+				}
+				.portfolio:hover {
+					background-color: #4b516d;
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1720px) {
+	.container {
+		.window {
+			.title {
+				font-size: 4rem;
+			}
+
+		}
+	}
+}
+
+@media only screen and (max-width: 1180px) {
+	.container {
+		.window {
+			.info {
+				.heading {
+					.title {
+						font-size: 3.5rem;
+					}
+					.description {
+						font-size: 1.5rem;
+					}
+				}
+				.links {
+					a {
+						width: 80%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 814px) {
+	.container {
+		.window {
+			.title {
+				font-size: 3rem;
+			}
+
+			.info {
+				.heading {
+					.description {
+						font-size: 1.4rem;
+					}
+				}
+				.links {
+					a {
+						margin: .5rem;
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 748px) {
+	.container {
+		.window {
+			flex-direction: column;
+
+			.image {
+				flex-direction: row;
+				border-bottom-left-radius: 0px;
+				border-top-right-radius: 25px;
+				border: 0px solid white;
+				border-bottom: 4px solid white;
+
+				padding: 0;
+
+				img {
+					width: 100px;
+					padding: .2rem;
+					border: 2px solid white;
+					margin: 1rem;
+				}
+			}
+
+			.info {
+				.heading {
+					.title {
+						display: none;
+					}
+				}
+				.links {
+					flex-direction: row;
+					flex-wrap: wrap;
+					
+					a {
+						width: 40%;
+						padding: .8rem;
+						margin: .3rem;
+						border-radius: 20px;
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 452px) {
+	.container {
+		.window {
+			.image {
+				img {
+					width: 60px;
+				}
+				.title {
+					font-size: 2rem;
+				}
+			}
+			.info {
+				.heading {
+					.description {
+						font-size: 1.2rem;
+					}
+				}
+
+				.links {
+					a {
+						font-size: 1.1rem;
+						padding: .4rem;
+
+						i {
+							margin-right: .3rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
