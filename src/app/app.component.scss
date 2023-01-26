@@ -250,6 +250,9 @@
 						font-size: 1.1rem;
 						padding: .4rem;
 
+						flex-direction: column;
+						width: 90%;
+
 						i {
 							margin-right: .3rem;
 						}
@@ -283,8 +286,6 @@
 
 				.links {
 					a {
-						flex-direction: column;
-						width: 90%;
 						font-size: 1rem;
 						margin: .2rem;
 
